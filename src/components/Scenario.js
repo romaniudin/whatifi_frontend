@@ -6,7 +6,7 @@ const Scenario = () => {
         <div className='container scenarioHome'>
             <div className='row'>
                 <div className='col'>
-                    <Link className='addButton' to='/scenariodetails'><img src='./images/round-circle.svg'/></Link>
+                    <Link className='addButton' to='/scenariodetails'><img className='plusSign' src='./images/round-circle.svg'/></Link>
                 </div>
             </div>
             <div className='row basicScenarioText'>

@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {Link} from 'react-router-dom'
 
-const ScenarioDetails = () => {
+class ScenarioDetails extends Component {
+    render() {
     return (
         <div className='container' id='scenarioDetails'>
             <div className='row'>
@@ -25,6 +26,6 @@ const ScenarioDetails = () => {
             </div>
         </div>
     )
-}
+}}
 
 export default ScenarioDetails;

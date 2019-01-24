@@ -5,7 +5,7 @@ class NewIncome extends Component {
     constructor() {
         super()
         this.state = {
-            display: []
+            display: 'active'
         }
     }
 
@@ -79,8 +79,8 @@ class NewIncome extends Component {
                             className="form-control form-control-sm"
                             placeholder="Start Date"/>
                     </div>
-                    <div className="form-group col-sm-3 incomeColumnSize">
-                        <input display={ this.state.display}
+                    <div className="form-group col-sm-3 incomeColumnSize" style={{display: this.state.display}}>
+                        <input
                             type="text"
                             className="form-control form-control-sm"
                             placeholder="End Date"/>

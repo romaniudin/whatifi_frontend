@@ -1,7 +1,20 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {Link} from 'react-router-dom'
 
-const NewExpense = () => {
+class NewExpense extends Component {
+    constructor() {
+        super()
+        this.state = {
+            display: 'active'
+        }
+    }
+
+    showStatus = () => {
+        this.setState({
+          display: 'none'
+        })
+      }
+    render() {
     return (
         <div className='container scenarioHome'>
             <form>
@@ -14,7 +27,7 @@ const NewExpense = () => {
                     </div>
                     <div className="form-group col-sm-3 incomeColumnSize">
                         <div className="form-check">
-                            <input className="form-check-input" type="checkbox" id="gridCheck"/>
+                            <input className="form-check-input" type="checkbox" id="gridCheck" onChange= { this.showStatus }/>
                             <label className="form-check-label" for="gridCheck">
                                 One Time Expense?
                             </label>
@@ -55,7 +68,7 @@ const NewExpense = () => {
                             className="form-control form-control-sm"
                             placeholder="Start Date"/>
                     </div>
-                    <div className="form-group col-sm-3 incomeColumnSize">
+                    <div className="form-group col-sm-3 incomeColumnSize"  style={{display: this.state.display}}>
                         <input
                             type="text"
                             className="form-control form-control-sm"
@@ -70,6 +83,6 @@ const NewExpense = () => {
             </form>
         </div>
     )
-}
+}}
 
 export default NewExpense;
