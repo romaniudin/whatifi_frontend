@@ -34,7 +34,7 @@ const newScenario = () => {
                             </select>
                         </div>
                         <div className="form-row justify-content-center">
-                            <Link to='/list'>
+                            <Link to='/scenariolist'>
                                 <button type="submit" className="btn btn-warning loginButton ">Add Scenario</button>
                             </Link>
                         </div>

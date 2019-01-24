@@ -69,8 +69,11 @@ li {
     color:white;
 }
 
-
 #graph {
     width: 290px;
     height: 160px;
+}
+
+.plusSign {
+    width: 50px;
 }

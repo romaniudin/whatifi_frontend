@@ -10,7 +10,7 @@ class ScenarioList extends Component {
             <div className='container scenarioHome'>
                 <div className='row'>
                     <div className='col'>
-                        <Link className='addButton' to='/newscenario'><img src='./images/round-circle.svg'/></Link>
+                        <Link className='addButton' to='/newscenario'><img className='plusSign' src='./images/round-circle.svg'/></Link>
                     </div>
                 </div>
                 <div className='row align-items-center'>

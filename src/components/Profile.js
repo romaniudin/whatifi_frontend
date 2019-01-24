@@ -6,7 +6,7 @@ const Profile = () => {
         <div className='container home'>
             <div className='row'>
                 <div className='col'>
-                    <Link className='addButton' to='/newscenario'><img src='./images/round-circle.svg'/></Link>
+                    <Link className='addButton' to='/newscenario'><img src='./images/round-circle.svg' className='plusSign'/></Link>
                 </div>
             </div>
             <div className='row'>

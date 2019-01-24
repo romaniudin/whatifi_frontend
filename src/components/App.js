@@ -25,7 +25,7 @@ class App extends Component {
                     <Route path="/" exact render ={() => <Home/>}/>
                     <Route path="/profile" render ={() => <Profile/>}/>
                     <Route path="/newscenario" render ={() => <NewScenario/>}/>
-                    <Route path="/list" render ={() => <ScenarioList/>}/>
+                    <Route path="/scenariolist" render ={() => <ScenarioList/>}/>
                     <Route path="/scenario" render ={() => <Scenario/>}/>
                     <Route path="/scenariodetails" render ={() => <ScenarioDetails/>}/>
                     <Route path="/newincome" render ={() => <NewIncome/>}/>
